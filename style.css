@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url('background.png');
+  height: 100vh;
+}
