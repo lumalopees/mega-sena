@@ -10,7 +10,13 @@ const createHeader = () => {
   getHeader.appendChild(createSubtext);
 }
 
-
+const RandomLuck = () => {
+  const mainTag = document.getElementsByTagName('main')[0]
+  const containerCircle = document.createElement('div');
+  containerCircle.className = '.numeros-container'
+  mainTag.appendChild(containerCircle);
+}
 // chamada de funções
 
 createHeader();
+RandomLuck();
