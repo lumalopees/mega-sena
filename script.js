@@ -13,26 +13,22 @@ const createHeader = () => {
 const RandomLuck = () => {
   const mainTag = document.getElementsByTagName('main')[0]
   const containerCircle = document.createElement('div');
-  containerCircle.className = '.numeros-container'
+  containerCircle.className = 'numeros-container';
   mainTag.appendChild(containerCircle);
 }
 
 const LuckyNumbers = () => {
- const container = document.querySelector('.numeros-container');
- 
- for (let index = 0; index < 7; index +=1) {
-    const numbers = document.createElement('div');
-    numbers.className = '.numero';
-    numbers.style.width = '50px';
-    numbers.style.height = '50px';
-    numbers.style.border = '1px solid black';
-    numbers.style.borderRadius = '50px';
+  const container = document.querySelector('.numeros-container');
+  
+  for (let index = 0; index < 6; index +=1) {
+     const numbers = document.createElement('div');
+     numbers.className = 'numero'; // Remova o ponto aqui
+     container.appendChild(numbers);
+  }
  }
- container.appendChild(numbers);
-}
-
-// chamada de funções
-
-createHeader();
-RandomLuck();
-LuckyNumbers();
+ 
+ // chamada de funções
+ 
+ createHeader();
+ RandomLuck();
+ LuckyNumbers();
