@@ -16,7 +16,23 @@ const RandomLuck = () => {
   containerCircle.className = '.numeros-container'
   mainTag.appendChild(containerCircle);
 }
+
+const LuckyNumbers = () => {
+ const container = document.querySelector('.numeros-container');
+ 
+ for (let index = 0; index < 7; index +=1) {
+    const numbers = document.createElement('div');
+    numbers.className = '.numero';
+    numbers.style.width = '50px';
+    numbers.style.height = '50px';
+    numbers.style.border = '1px solid black';
+    numbers.style.borderRadius = '50px';
+ }
+ container.appendChild(numbers);
+}
+
 // chamada de funções
 
 createHeader();
 RandomLuck();
+LuckyNumbers();
