@@ -1,4 +1,4 @@
-// funções
+// funções 
 
 const createHeader = () => {
   const getHeader = document.getElementsByTagName('header')[0];
@@ -28,7 +28,7 @@ const LuckyNumbers = () => {
   }
  }
  
- // chamada funções
+ // chamada 
  
  createHeader();
  RandomLuck();
