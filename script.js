@@ -17,13 +17,18 @@ const RandomLuck = () => {
   mainTag.appendChild(containerCircle);
 }
 
+const RandomNumbers = () => {
+  return Math.ceil(Math.random() * (100 - 1) + 1);
+ 
+}
+
 const LuckyNumbers = () => {
   const container = document.querySelector('.numeros-container');
   
   for (let index = 0; index < 6; index +=1) {
      const numbers = document.createElement('div');
      numbers.className = 'numero'; 
-     numero.innerText = Math.random
+     numbers.innerText = RandomNumbers();
      container.appendChild(numbers);
   }
  }
