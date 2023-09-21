@@ -28,7 +28,7 @@ const LuckyNumbers = () => {
   }
  }
  
- // chamada de funções
+ // chamada funções
  
  createHeader();
  RandomLuck();
