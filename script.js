@@ -22,7 +22,8 @@ const LuckyNumbers = () => {
   
   for (let index = 0; index < 6; index +=1) {
      const numbers = document.createElement('div');
-     numbers.className = 'numero'; // Remova o ponto aqui
+     numbers.className = 'numero'; 
+     numero.innerText = ''
      container.appendChild(numbers);
   }
  }
