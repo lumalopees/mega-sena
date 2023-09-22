@@ -22,10 +22,10 @@ const RandomNumbers = () => {
  
 }
 
-const LuckyNumbers = () => {
+const LuckyNumbers = (quantidade) => {
   const container = document.querySelector('.numeros-container');
   
-  for (let index = 0; index < 6; index +=1) {
+  for (let index = 0; index < quantidade; index +=1) {
      const numbers = document.createElement('div');
      numbers.className = 'numero'; 
      numbers.innerText = RandomNumbers();
@@ -37,4 +37,4 @@ const LuckyNumbers = () => {
  
  createHeader();
  RandomLuck();
- LuckyNumbers();
+ LuckyNumbers(6);
