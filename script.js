@@ -37,4 +37,4 @@ const LuckyNumbers = (quantidade) => {
  
  createHeader();
  RandomLuck();
- LuckyNumbers(6);
+ LuckyNumbers(5);
